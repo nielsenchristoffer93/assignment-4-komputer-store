@@ -8,6 +8,9 @@ You can add balance to your bank by working as well as taking a loan for purchas
 The select element (drop-down list) containing the different computers is fetched from a API:  
 https://noroff-komputer-store-api.herokuapp.com/computers
 
+Project is available as a github-page:  
+https://nielsenchristoffer93.github.io/assignment-4-komputer-store/
+
 ## The Bank 💰
 
 The bank will display your balance, and a button for taking a loan.  
