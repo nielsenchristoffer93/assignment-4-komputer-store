@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="resources/css/style.css" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+
+    <title>Komputer Store 💻</title>
+</head>
+
+<body>
+    <nav>
+        <div class="row">
+            Komputer Store
+        </div>
+    </nav>
+    <div class="row">
+        <header>
+            <div class="flex-container">
+                <div class="flex-row-item">
+                    <div class="flex-container-column">
+                        <div class="inline-item">
+                            <h1>Christoffer Nielsen</h1>
+                        </div>
+                        <div class="inline-item">
+                            <div class="flex-item-row">
+                                <h2>Balance:</h2>
+                                <h2 id="balance">200 SEK</h2>
+                            </div>
+                        </div>
+                        <div class="inline-item hide" id="loan-balance">
+                            <div class="flex-item-row">
+                                <h2>Loan:</h2>
+                                <h2 id="loan">200 SEK</h2>
+                            </div>
+                        </div>
+                        <div class="inline-item" id="get-loan-item">
+                            <button type="button" class="btn primary" id="get-loan-button">
+                                Get a loan
+                            </button>
+                        </div>
+                        <!--<div class="inline-item hide" id="repay-loan-item">
+                            <button type="button" class="btn secondary" id="repay-loan-button">
+                                Repay loan
+                            </button>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="flex-row-item">
+                    <div>
+                        <p class="hidden-text"></p>
+                        <img src="https://i.redd.it/fw2vuujpieb71.png" alt="easter-egg.png" class="hidden-image">
+                    </div>
+                    <div class="flex-container-column">
+                        <div class="inline-item">
+                            <h1>Work</h1>
+                        </div>
+                        <div class="inline-item">
+                            <div class="flex-item-row">
+                                <h2>Pay:</h2>
+                                <h2 id="pay">200 SEK</h2>
+                            </div>
+                        </div>
+                        <div class="inline-item">
+                            <div class="flex-item-row">
+                                <button type="button" class="btn half primary-ghost" id="bank-button">
+                                    Bank
+                                </button>
+                                <button type="button" class="btn half secondary" id="work-button">
+                                    Work
+                                </button>
+                            </div>
+                        </div>
+                        <div class="inline-item hide" id="repay-loan-item">
+                            <button type="button" class="btn primary" id="repay-loan-button">
+                                Repay loan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-row-item">
+                    <div class="flex-container-column laptop">
+                        <div class="inline-item">
+                            <h1>Laptop</h1>
+                        </div>
+                        <div class="inline-item">
+                            <select name="laptops" id="select"></select>
+                        </div>
+                        <div class="inline-item">
+                            <h3>Features:</h3>
+                            <div id="features">
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                    Voluptatum est inventore illum quos blanditiis dolorum
+                                    minima nesciunt odit accusamus facilis dolores culpa odio
+                                    maxime, delectus iste sit adipisci id aliquam!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="flex-container large">
+                <div class="flex-row-item large">
+                    <img id="laptop-image" src="https://edgepharm.com/wp-content/uploads/2020/01/image-placeholder.jpg"
+                        alt="image-placeholder.jpg" />
+                    <div class="product-description">
+                        <h1 id="laptop-title">Intel Celeroon E10</h1>
+                        <p id="laptop-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veritatis tempora numquam repellat officia dolorum cupiditate
+                            assumenda ipsa asperiores perspiciatis error ducimus, laborum ea
+                            molestias cum a qui obcaecati? Vero, voluptas. Lorem ipsum dolor
+                            sit amet, consectetur adipisicing elit. Hic eligendi voluptates,
+                            voluptatem fugit tempore cum asperiores similique, nulla error
+                            quibusdam dolorem rem? Earum minima minus quas. Blanditiis rerum
+                            quasi earum. Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Labore nulla minus numquam blanditiis, incidunt, corrupti
+                            dolor sunt explicabo excepturi eaque animi qui debitis
+                            cupiditate reprehenderit tempore dolorum totam impedit?
+                            Temporibus.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-row-item">
+                    <div class="flex-container-column">
+                        <div class="inline-item">
+                            <h1 class="price" id="laptop-price">1500 SEK</h1>
+                        </div>
+                        <div class="inline-item">
+                            <button type="button" class="btn primary" id="buy-button">
+                                Buy now
+                            </button>
+                        </div>
+                        <div class="inline-item">
+                            <h4 id="laptop-stock">Items in stock: 0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- JAVASCRIPT FILES -->
+    <script src="resources/js/bank.js"></script>
+    <script src="resources/js/work.js"></script>
+    <script src="resources/js/laptop.js"></script>
+</body>
+
+</html>

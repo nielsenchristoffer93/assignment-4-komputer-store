@@ -1,0 +1,243 @@
+/*======================================*/
+/*            APPLIES TO ALL            */
+/*======================================*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+}
+
+/*======================================*/
+/*              NAVIGATION              */
+/*======================================*/
+
+nav {
+  position: relative;
+  width: 100%;
+  background-color: grey;
+  padding: 1rem 0;
+  color: white;
+  text-transform: uppercase;
+  z-index: -99;
+}
+
+/*======================================*/
+/*        REUSABLE COMPONTENTS          */
+/*======================================*/
+
+header,
+section {
+  padding-top: 4rem;
+}
+
+p {
+  line-height: 1.4;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+}
+
+.row {
+  width: 90%;
+  margin: 0 5%;
+}
+
+.hide {
+  display: none;
+}
+
+/*======================================*/
+/*               BUTTONS                */
+/*======================================*/
+
+button {
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 3px #ccc;
+}
+
+button:active {
+  box-shadow: 0 2px #888;
+  transform: translateY(2px);
+}
+
+button,
+select {
+  width: 100%;
+  height: 40px;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.half {
+  width: 48%;
+}
+
+.primary {
+  border: 2px solid #28e877;
+  background-color: #28e877;
+  color: white;
+  transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;
+}
+
+.primary-ghost {
+  border: 2px solid #28e877;
+  color: #28e877;
+  background-color: white;
+  transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;;
+}
+
+.secondary {
+  background-color: #3e919c;
+  border: 2px solid #3e919c;
+  color: white;
+  transition: background-color ease-in-out 0.2s, color ease-in-out 0.2s;;
+}
+
+.primary:hover {
+  background-color: white;
+  color: #28e877;
+}
+
+.primary-ghost:hover {
+  background-color: #28e877;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: white;
+  color: #3e919c;
+}
+
+/*======================================*/
+/*      FLEX CONTAINERS AND ITEMS       */
+/*======================================*/
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container.large {
+  padding: 3%;
+  border-radius: 0.5rem;
+  background-color: #eee;
+  border: 1px solid grey;
+  height: auto;
+}
+
+.flex-row-item {
+  /*border-radius: 0.6rem;*/
+  background-color: #f6f6f6;
+  width: 31%;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.flex-row-item.large {
+  height: 340px;
+  width: 66%;
+  border-radius: 0.5rem;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 6%;
+  height: 340px;
+}
+
+.inline-item {
+  width: 100%;
+}
+
+.flex-item-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hidden-text {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.hidden-image {
+  position: absolute;
+  top: 150px;
+  right: 55%;
+  height: 100px;
+  width: auto;
+  display: block;
+  z-index: -1;
+  transition: top ease-in-out 1s;
+}
+
+.hidden-text:hover + .hidden-image {
+  display: block;
+  top: 40px;
+}
+
+.hidden-image:hover {
+  display: block;
+  top: 40px;
+}
+
+/*======================================*/
+/*           PRODUCT SECTION            */
+/*======================================*/
+
+.flex-container-column.laptop {
+  justify-content: stretch;
+}
+
+select {
+  margin: 5% 0;
+}
+
+/*======================================*/
+/*           PRODUCT SECTION            */
+/*======================================*/
+
+.flex-row-item.large img {
+  max-width: 340px;
+  min-height: 340px;
+  /*width: 30%;
+    max-height: 100%;*/
+  float: left;
+  margin-right: 5%;
+}
+
+.product-description h1 {
+  font-size: 260%;
+  margin-bottom: 2%;
+}
+
+.flex-container.large .flex-container-column {
+  justify-content: space-around;
+  height: 340px;
+  margin: 0;
+}
+
+.flex-container.large .flex-row-item {
+  background-color: transparent;
+}
+
+.price {
+  text-align: center;
+}
+
+#laptop-stock {
+  text-align: center;
+}
