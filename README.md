@@ -13,6 +13,13 @@ https://noroff-komputer-store-api.herokuapp.com/computers
 The bank will display your balance, and a button for taking a loan.  
 If you have a active loan, a loan balance will appear.
 
+To increase bank with custom amount (in this case 100 000) use:  
+
+```javascript
+bank.setBalance = 100000;
+```
+
+
 ## Working ⛏
 
 The work section will display your total pay, which will increase by 100 every time you click the "work" button.  
