@@ -33,6 +33,18 @@ updateBankBalanceOnPage();
 The work section will display your total pay, which will increase by 100 every time you click the "work" button.  
 The "bank" button will deposit the pay into the bank balance. If you have a active loan 10% will be automatically deducted from the total pay to be able to repay the dept. You can also choose to immediately repay the loan using the "repay loan" button, which will deduct the loan balance by the total pay.
 
+To increase pay with custom amount (in this case 100 000) use:  
+
+```javascript
+work.setPayment = 100000;
+```
+
+The pay will then be updated but not the webpage. For the webpage to update use:
+
+```javascript
+updateWorkPaymentBalanceOnPage();
+```
+
 ## Laptop 💻
 
 By selecting a different laptop from the drop-down, the information on the page will update.
