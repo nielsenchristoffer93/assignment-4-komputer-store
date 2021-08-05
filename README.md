@@ -19,6 +19,11 @@ To increase bank with custom amount (in this case 100 000) use:
 bank.setBalance = 100000;
 ```
 
+The balance will then be updated but not the webpage. For the webpage to update use:
+
+```javascript
+updateBankBalanceOnPage();
+```
 
 ## Working ⛏
 
