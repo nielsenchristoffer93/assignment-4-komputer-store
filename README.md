@@ -1,6 +1,6 @@
 # Assignment 4 Komputer Store
 
-Can you find the easter-egg 🥚? *Hint: Look after a cursor pointer around Work title*
+Can you find the easter-egg 🥚? *Hint: Look for a cursor pointer around Work title*
 
 A dynamic webpage using "vanilla" JavaScript.  
 You can add balance to your bank by working as well as taking a loan for purchasing a laptop.
